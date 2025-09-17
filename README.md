@@ -131,10 +131,17 @@ Loom/Zoom: <paste link>
 
 ## Reflections
 ### Similarities
-- <brief bullets>
+- Both platforms provide a free trial without requiring billing details.
+- Each offers a clean and easy to navigate homepage layout.
+- Both sites include a clear explanation for different sections, and describes features/set up steps.
+- Users can configure domains, operating systems, networking, and security options in both.
+- Each platform provides core VM management functions.
 
 ### Differences
-- <brief bullets>
+- OCI requires SSO authentication each session and also does log you out when idle, whereas GCP keeps you signed in through your google account. 
+- GCP uses side tabs for quick navigation, whereas OCI requires more scrolling through each step in sequence.
+- GCP loads a lot faster overall, while OCi took longer to respond during the set up process.
+- The pricing did vary between the two sites.
 
 ### Preference (OCI vs GCP) and Why
-- <one short paragraph>
+- I would personally choose Google Cloud over OCI because it feels more intuitive and beginner friendly. The sidebar navigation and faster VM setup were also a plus. It was nice to beable to quickly start, stop, and delete the virtual machines compared to OCI which took a little more time. However, OCI does have better security whereas GCP keeps users logged in. 
