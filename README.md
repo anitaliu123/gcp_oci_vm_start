@@ -1,7 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
 ## Video Tutorials
-Loom/Zoom: <paste link>
+[GCP](https://drive.google.com/drive/u/4/folders/1mBVUwnlDpNiAHFJyieAPfVtfc8_EHjxE)
+[OCI](https://drive.google.com/drive/u/4/folders/1mBVUwnlDpNiAHFJyieAPfVtfc8_EHjxE)
 
 ## Prerequisites
 - Cloud access to GCP and OCI
@@ -68,7 +69,7 @@ Loom/Zoom: <paste link>
 ## Oracle Cloud (OCI)
 ### Create
 1. Go to the [Oracle Cloud](https://www.oracle.com/cloud/) site and log in
-2. Click "create an instance" which will be under the "build" section
+2. Click "create a VM instance" which will be under the "build" section
 
 ![OCI create](images/oci/home_page.png)
 
@@ -106,17 +107,19 @@ Loom/Zoom: <paste link>
 12. No other changes. Review the information and click "create".
 
 ### Start
-- Start: <state shows RUNNING>
+
 13. You will now see the work requests page. Once you see the screen "succeeded" status, the VM is ready.
 14. Click "start" to run it. It should show "running" next to the name of the VM.
 
+- Start: <state shows RUNNING>
 ![OCI create](images/oci/testing_progress.png)
 ![OCI create](images/oci/testing_running.png)
 
 ### Stop
-- Stop: <state shows STOPPED>
+
 15. Click on the drop down menu "actions" and then click "stop" and then "stop instance". It will now show the status as red and say "stopped"
 
+- Stop: <state shows STOPPED>
 ![OCI create](images/oci/Action_dropdown.png)
 ![OCI create](images/oci/stop_instance.png)
 ![OCI create](images/oci/stopped.png)
