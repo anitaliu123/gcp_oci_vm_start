@@ -46,6 +46,7 @@ Loom/Zoom: <paste link>
 
 ### Stop
 - Stop: <state shows TERMINATED/STOPPED>
+
 ![GCP create](images/gcp/end_dropmenu.png)
 
 12. Click on the 3 dots menu
@@ -54,7 +55,7 @@ Loom/Zoom: <paste link>
 - In order to start this process again, select the 3 dotted menu and select the "start/select" button. You will then need to repeat the steps from 11. 
 
 ### Delete
-15. Select the 3 dotted menu once again and click on "delete"
+15. Select the 3 dotted menu once again and click on "delete" and then "delete" again
 
 ![GCP create](images/gcp/delete.png)
 
@@ -66,25 +67,65 @@ Loom/Zoom: <paste link>
 
 ## Oracle Cloud (OCI)
 ### Create
-1. Compartment: <name>
-2. Networking: VCN with Internet Connectivity (defaults)
-3. Shape: <smallest/free-eligible>
-4. Image: Ubuntu (or Oracle Linux)
-5. Public IP: ephemeral
-6. Boot volume: default minimal
+1. Go to the [Oracle Cloud](https://www.oracle.com/cloud/) site and log in
+2. Click "create an instance" which will be under the "build" section
 
-![OCI create](images/oci_create.png)
+![OCI create](images/oci/home_page.png)
 
-### Start/Stop
+3. Name the VM
+
+![OCI create](images/oci/naming.png)
+
+4. Scroll down a select a domain, I left it at the default one. 
+5. Scroll down and select "change image" and then choose either "Ubuntu" or "Oracle Linux"
+- I selected "Ubuntu"
+
+![OCI create](images/oci/image_and_shape.png)
+![OCI create](images/oci/select_ubuntu.png)
+
+6. Click "select image"
+7. Choose the smallest/free eligible. I chose the first free option.
+
+![OCI create](images/oci/change_image_free.png)
+
+8. Scroll down and select "change shape". Select the always free-eligible option and click "select shape".
+
+![OCI create](images/oci/change_shape.png)
+![OCI create](images/oci/domain.png)
+
+9. Click next. At this point you can see your estimated cost.
+
+![OCI create](images/oci/estimated_cost.png)
+
+10. Click "next" past security.
+11. At the networking section, name your VNIC and create a new virtual cloud network. Scroll down until you see "add SSH keys" click both "download private key" and "download public key". Click "next"
+
+![OCI create](images/oci/networking.png)
+![OCI create](images/oci/SSH_keys.png)
+
+12. No other changes. Review the information and click "create".
+
+### Start
 - Start: <state shows RUNNING>
-- Stop: <state shows STOPPED>
+13. You will now see the work requests page. Once you see the screen "succeeded" status, the VM is ready.
+14. Click "start" to run it. It should show "running" next to the name of the VM.
 
-![OCI running](images/oci_running.png)
+![OCI create](images/oci/testing_progress.png)
+![OCI create](images/oci/testing_running.png)
+
+### Stop
+- Stop: <state shows STOPPED>
+15. Click on the drop down menu "actions" and then click "stop" and then "stop instance". It will now show the status as red and say "stopped"
+
+![OCI create](images/oci/Action_dropdown.png)
+![OCI create](images/oci/stop_instance.png)
+![OCI create](images/oci/stopped.png)
 
 ### Terminate
-- Terminate and delete boot volume; verify cleanup
+16. Click on the drop down menu "actions" click on "terminate" finally click "terminate instance". The status should now be gray and say "terminated".
 
-![OCI cleaned](images/oci_clean.png)
+![OCI cleaned](images/oci/terminate.png)
+![OCI cleaned](images/oci/terminated.png)
 
 ---
 
