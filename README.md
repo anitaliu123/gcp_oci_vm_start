@@ -1,8 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
 ## Video Tutorials
-[GCP](https://drive.google.com/drive/u/4/folders/1mBVUwnlDpNiAHFJyieAPfVtfc8_EHjxE)
-[OCI](https://drive.google.com/drive/u/4/folders/1mBVUwnlDpNiAHFJyieAPfVtfc8_EHjxE)
+- [GCP](https://drive.google.com/file/d/13q_UktaK_5-nI6qhHVG5HjIDfS_s2lhD/view?usp=sharing)
+- [OCI](https://drive.google.com/file/d/1cpzFklcofXS7fB9tOtmxw7v4aStXYznX/view?usp=sharing)
 
 ## Prerequisites
 - Cloud access to GCP and OCI
@@ -46,7 +46,7 @@
 ![GCP create](images/gcp/greencircle.png)
 
 ### Stop
-- Stop: <state shows TERMINATED/STOPPED>
+- Stop: 
 
 ![GCP create](images/gcp/end_dropmenu.png)
 
@@ -143,8 +143,8 @@
 ### Differences
 - OCI requires SSO authentication each session and also does log you out when idle, whereas GCP keeps you signed in through your google account. 
 - GCP uses side tabs for quick navigation, whereas OCI requires more scrolling through each step in sequence.
-- GCP loads a lot faster overall, while OCi took longer to respond during the set up process.
+- GCP loads a lot faster overall, while OCI took longer to respond during the set up process.
 - The pricing did vary between the two sites.
 
 ### Preference (OCI vs GCP) and Why
-- I would personally choose Google Cloud over OCI because it feels more intuitive and beginner friendly. The sidebar navigation and faster VM setup were also a plus. It was nice to beable to quickly start, stop, and delete the virtual machines compared to OCI which took a little more time. However, OCI does have better security whereas GCP keeps users logged in. 
+- I would personally choose Google Cloud over OCI because it feels more intuitive and beginner friendly. The sidebar navigation and faster VM setup were also a plus. It was nice to be able to quickly create, start, stop, and delete the virtual machines compared to OCI which took a little more time. However, OCI does have better security whereas GCP keeps users logged in. During my tutorial process, I noticed that the OCI took a significant amount of time to start running and terminating. It took almost 10 minutes before my VM was terminated. 
